@@ -13,7 +13,7 @@ data <- mutate(data, datetime = dmy_hms(paste(Date, Time, sep = " ")))
 
 # Select dates of interest
 data2 <- data[(data$datetime >= ymd_hms("2007-02-01 00:00:00")) & 
-                  (data$datetime < ymd_hms("2007-02-03 00:00:00")),]
+              (data$datetime < ymd_hms("2007-02-03 00:00:00")),]
 
 # Plot it!!
 with(data2, plot(Sub_metering_1 ~ datetime,
@@ -31,5 +31,5 @@ legend("topright",
        lty = c(1, 1, 1))
 
 # Save as PNG
-dev.copy(png, file = ".\\ExData_Plotting1\\plot3.png")
+dev.copy(png, file = ".\\ExData_Plotting1\\plot3.png", width=480, height=480)
 dev.off()

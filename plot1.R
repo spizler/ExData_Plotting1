@@ -22,5 +22,5 @@ hist(data$Global_active_power,
      xlab = "Global Active Power (kilowatts)")
 
 # Save as PNG
-dev.copy(png, file = ".\\ExData_Plotting1\\plot1.png")
+dev.copy(png, file = ".\\ExData_Plotting1\\plot1.png", width=480, height=480)
 dev.off()

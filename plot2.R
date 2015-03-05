@@ -22,5 +22,5 @@ with(data2, plot(Global_active_power ~ datetime,
                  ylab = "Global Active Power (kilowatts)"))
 
 # Save as PNG
-dev.copy(png, file = ".\\ExData_Plotting1\\plot2.png")
+dev.copy(png, file = ".\\ExData_Plotting1\\plot2.png", width=480, height=480)
 dev.off()
